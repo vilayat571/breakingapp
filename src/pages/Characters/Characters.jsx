@@ -11,7 +11,7 @@ function Characters() {
   const [limit, setLimit] = useState(6)
   useEffect(() => {
     dispatch(getData(limit))
-  },);
+  });
   const loadMore = () => {
     setLimit(limit + 6)
     dispatch(getData(limit))
