@@ -34,7 +34,7 @@ function Characters() {
               return (
                 <div className='char' key={item.char_id}>
                   <Link to={`/characters/${item.char_id}`}>
-                    <img className='img' src={item.img} alt="image" />
+                    <img className='img' src={item.img} alt="the first appearance" />
                     <div className='div'>
                       {
                         item.name
