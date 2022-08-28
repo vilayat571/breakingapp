@@ -9,7 +9,8 @@ function Quote() {
         fetch(`https://www.breakingbadapi.com/api/quotes/${id}`)
             .then(res => res.json())
             .then(veri => setData(veri))
-    }, [])
+    }
+    )
     return (
         <div style={{ margin: "30px" }}>
             <h1>

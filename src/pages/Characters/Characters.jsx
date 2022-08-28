@@ -11,7 +11,7 @@ function Characters() {
   const [limit, setLimit] = useState(6)
   useEffect(() => {
     dispatch(getData(limit))
-  },);
+  }, [dispatch,limit]);
   const loadMore = () => {
     setLimit(limit + 6)
     dispatch(getData(limit))
@@ -34,7 +34,7 @@ function Characters() {
               return (
                 <div className='char' key={item.char_id}>
                   <Link to={`/characters/${item.char_id}`}>
-                    <img className='img' src={item.img} alt="the first identified apperance" />
+                    <img className='img' src={item.img} alt="image" />
                     <div className='div'>
                       {
                         item.name
