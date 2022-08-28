@@ -13,7 +13,7 @@ function Character() {
   return (
     <div style={{ margin: "30px" }}>
       <h1 style={{ marginLeft: "20px" }}>
-        Single Character Pages
+        Single Character Page
       </h1>
       {
         data ? data.map((item) => {
