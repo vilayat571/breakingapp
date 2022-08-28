@@ -8,7 +8,7 @@ function Quotes() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData())
-  }, [dispatch]);
+  });
   const loading = useSelector(state => state.quotesReducer.fetchData.isloading)
   if (loading) {
     return <div style={{

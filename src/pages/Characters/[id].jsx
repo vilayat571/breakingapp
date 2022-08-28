@@ -19,7 +19,7 @@ function Character() {
         data ? data.map((item) => {
           return (
             <div className='char' key={item.char_id}>
-              <img className='img' src={item.img} alt="image" />
+              <img className='img' src={item.img} alt="characters specified appearance" />
               <div className='div'>
                 {
                   item.name
