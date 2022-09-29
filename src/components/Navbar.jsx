@@ -7,7 +7,7 @@ function Navbar() {
                 Characters
             </Link>
             <Link to="/quotes">
-                Quotes
+                Quote
             </Link>
         </div>
     )
